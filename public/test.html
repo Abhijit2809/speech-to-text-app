@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Speech to Text</title>
+  <style>
+    body { font-family: Arial; padding: 50px; background: #0f172a; color: white; }
+    button { padding: 15px 30px; font-size: 18px; background: #7c3aed; color: white; border: none; border-radius: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>🎙️ Test Speech to Text</h1>
+  
+  <form action="/api/transcribe" method="POST" enctype="multipart/form-data">
+    <input type="file" name="audio" accept="audio/*" />
+    <br><br>
+    <button type="submit">Upload & Transcribe</button>
+  </form>
+
+  <p><strong>Important:</strong> Open this page from <b>http://localhost:5173/test.html</b></p>
+</body>
+</html>
